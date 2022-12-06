@@ -1,4 +1,6 @@
-const products = [
+const products = 
+
+[
     {
         id: 1,
         name: 'Zip Tote Basket',
@@ -7,6 +9,8 @@ const products = [
         imageSrc: 'https://res.cloudinary.com/dy1bghrrm/image/upload/v1670160505/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg',
         imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
         price: 'ksh140',
+        description:'very good',
+        review:'I would recommend'
     },
     {
         id: 2,
@@ -30,6 +34,8 @@ const products = [
 ]
 
 export default function Products() {
+
+    fetch ('/products')
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
